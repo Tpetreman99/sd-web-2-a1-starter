@@ -93,6 +93,7 @@ function characterNameWithError(array, listedCharacters, errorElement) {
     
       console.error(errorMessage);
       const errorMessagePrint = document.createElement("p");
+      errorMessagePrint.classList.add("error-message")
       errorMessagePrint.textContent = errorMessage;
       errorElement.appendChild(errorMessagePrint);
       return
