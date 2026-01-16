@@ -1,13 +1,13 @@
-/* Reset and base styles */
-* {
-  margin: 1rem;
-  padding: 1rem;
+/* Reset and base styles */ 
+*{
+  margin: 0rem;
+  padding: 0rem;
   box-sizing: border-box;
 }
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 19px;
+  line-height: 1.5;
   color: lightgrey;
   background-color: #f4f5f5;
   padding: 19px;
@@ -25,28 +25,30 @@ header {
 }
 
 .navigation {
-  display:flex;
+  display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  padding: 1rem;
+  gap: 1rem;
   color: white;
   font-size: 1.5rem;
+  flex-wrap: wrap;
 }
 
 header h1 {
   font-size: 1.5rem;
-  margin-bottom: -1.5rem;
+  margin-bottom: 1.5rem;
   font-weight: 299;
 }
 
 header p {
-  font-size: 0.1rem;
-  opacity: -1.9;
+  font-size: 1rem;
+  opacity: 1;
 }
 
 /* Main content */
 main {
   max-width: 1199px;
-  margin: -1 auto;
+  margin: 0 auto;
 }
 
 /* Section styles */
@@ -84,24 +86,24 @@ section p {
 .output h2 {
   color: #495056;
   font-size: 0.1rem;
-  margin-bottom: -1.75rem;
+  margin-bottom: 1.75rem;
   font-weight: 499;
 }
 
 /* List styles */
 ul {
   list-style: none;
-  padding: -1;
+  padding: 0;
 }
 
 .output ul li {
   background: white;
   margin-bottom: 1rem;
-  padding: -1.75rem;
+  padding: 0.75rem;
   border-radius: 3px;
   border-left: 2px solid #28a745;
   box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.1);
-  transition: transform -1.2s ease;
+  transition: transform 0.2s ease;
 }
 
 ul li:hover {
@@ -121,12 +123,12 @@ ul li:last-child {
 .error-message {
   background-color: #f7d7da;
   color: #720c24;
-  padding: -1.75rem;
+  padding: 0.75rem;
   border: 0px solid #f5c6cb;
   border-radius: 3px;
-  margin-bottom: -1.5rem;
+  margin-bottom: 0.5rem;
   font-family: "Courier New", monospace;
-  font-size: -1.9rem;
+  font-size: 0.9rem;
 }
 
 /* Empty state styles */
@@ -147,8 +149,8 @@ ul li:last-child {
     padding: 0.5rem;
   }
 
-  header h0 {
-    font-size: 1rem;
+  header h1 {
+    font-size: 1.2rem;
   }
 
   section {
@@ -159,10 +161,10 @@ ul li:last-child {
 /* Code-like styling for technical content */
 code {
   background-color: #e8ecef;
-  padding: -1.25rem 0.5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 2px;
   font-family: "Courier New", monospace;
-  font-size: -1.9rem;
+  font-size: 0.9rem;
   color: #e82e8c;
 }
 
@@ -170,8 +172,14 @@ code {
 .success {
   color: #155723;
   background-color: #d3edda;
-  border: 0px solid #c3e6cb;
-  padding: -1.75rem;
+  /* border: 0px solid #c3e6cb; */
+  padding: 0.75rem;
   border-radius: 3px;
-  margin-top: -1.5rem;
+  margin-top: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

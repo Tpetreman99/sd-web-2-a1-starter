@@ -1,121 +1,140 @@
+<!-- 
+ Name: Tanner Petreman
+ Student ID: 000831967
+ Assignment: Web Dev 2 - Assingmnet 1 - Refresh
+ Date: January 12, 2026 -->
+
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SD Web 2 Assignment 1</title>
-    <link rel="stylesheet" href="main.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Home</a></li>
-          <!-- Create a list with placeholder links for 3 other pages -->
-          <li><a href="forums.html">Forums</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="references.html">References</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SD Web 2 Assignment 1</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <!-- Create a list with placeholder links for 3 other pages -->
+        <li><a href="forums.html">Forums</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>SAIT Software Developer Program Web 2 Assignment 1</h1>
+      <p>
+        Complete the JavaScript exercises below. Check the console for output
+        and fill in the results on this page.
+      </p>
+    </section>
+    <section id="exercise-1">
+      <h1>Exercise 1: Print Character Names</h1>
+      <p>Print out the names of each character in the console.</p>
+      <div class="output">
+        <h1>Results:</h1>
+        <ul id="names-list">
+          <!-- Character names will be populated here -->
         </ul>
-      </nav>
-    </header>
-      <section>
-        <h1>SAIT Software Developer Program Web 2 Assignment 1</h1>
-        <p>
-          Complete the JavaScript exercises below. Check the console for output
-          and fill in the results on this page.
-        </p>
-      </section>
-      <section id="exercise-1">
-        <h1>Exercise 1: Print Character Names</h1>
-        <p>Print out the names of each character in the console.</p>
-        <div class="output">
-          <h1>Results:</h1>
-          <ul id="names-list">
-            <!-- Character names will be populated here -->
-          </ul>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="exercise-2">
-        <h1>Exercise 2: Filter by Age</h1>
-        <p>Print out the names of characters whose age is less than 40.</p>
-        <div class="output">
-          <h1>Results:</h1>
-          <ul id="young-characters-list">
-            <!-- Filtered character names will be populated here -->
-          </ul>
-        </div>
-      </section>
+    <section id="exercise-2">
+      <h1>Exercise 2: Filter by Age</h1>
+      <p>Print out the names of characters whose age is less than 40.</p>
+      <div class="output">
+        <h1>Results:</h1>
+        <ul id="young-characters-list">
+          <!-- Filtered character names will be populated here -->
+        </ul>
+      </div>
+    </section>
 
-      <section id="exercise-3">
-        <h1>Exercise 3: Reusable Function for Lists</h1>
-        <p>
-          Create a function that takes any array and renders a list of character names on the page.
-        </p>
-        <div class="output">
-          <h1>Results:</h1>
-          <ul id="function-list">
-            <!-- Function-generated list will be populated here -->
-          </ul>
-        </div>
-      </section>
+    <section id="exercise-3">
+      <h1>Exercise 3: Reusable Function for Lists</h1>
+      <p>
+        Create a function that takes any array and renders a list of character names on the page.
+      </p>
+      <div class="output">
+        <h1>Results:</h1>
+        <ul id="function-list">
+          <!-- Function-generated list will be populated here -->
+        </ul>
+      </div>
+    </section>
 
-      <section id="exercise-4">
-        <h1>Exercise 4: Age Filter Function</h1>
-        <p>
-          Create a function that takes an array and an age threshold, then displays characters below that age.
-        </p>
-        <div class="output">
-          <h1>Results:</h1>
-          <ul id="age-filter-list">
-            <!-- Age-filtered results will be populated here -->
-          </ul>
-        </div>
-      </section>
+    <section id="exercise-4">
+      <h1>Exercise 4: Age Filter Function</h1>
+      <p>
+        Create a function that takes an array and an age threshold, then displays characters below that age.
+      </p>
+      <div class="output">
+        <h1>Results:</h1>
+        <ul id="age-filter-list">
+          <!-- Age-filtered results will be populated here -->
+        </ul>
+      </div>
+    </section>
 
-      <section id="exercise-5">
-        <h1>Exercise 5: Error Handling</h1>
-        <p>Add error handling to check if objects have a "name" property.</p>
-        <div class="output">
-          <h1>Results:</h1>
-          <ul id="error-handling-list">
-            <!-- Error-handled results will be populated here -->
-          </ul>
-          <div id="error-messages">
-            <!-- Error messages will be displayed here -->
-          </div>
+    <section id="exercise-5">
+      <h1>Exercise 5: Error Handling</h1>
+      <p>Add error handling to check if objects have a "name" property.</p>
+      <div class="output">
+        <h1>Results:</h1>
+        <ul id="error-handling-list">
+          <!-- Error-handled results will be populated here -->
+        </ul>
+        <div id="error-messages">
+          <!-- Error messages will be displayed here -->
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="exercise-6">
-        <h1>Exercise 6: Test Error Handling</h1>
-        <p>Test your error handling by using a broken array.</p>
-        <div class="output">
-          <h1>Results:</h1>
-          <ul id="broken-array-list">
-            <!-- Broken array test results will be populated here -->
-          </ul>
-          <div id="broken-array-errors">
-            <!-- Error messages from broken array will be displayed here -->
-          </div>
+    <section id="exercise-6">
+      <h1>Exercise 6: Test Error Handling</h1>
+      <p>Test your error handling by using a broken array.</p>
+      <div class="output">
+        <h1>Results:</h1>
+        <ul id="broken-array-list">
+          <!-- Broken array test results will be populated here -->
+        </ul>
+        <div id="broken-array-errors">
+          <!-- Error messages from broken array will be displayed here -->
         </div>
-      </section>
-      <article>
-          <h1>Article Collection</h1>
-        <!-- responsible for layout of articles -->
-          <!-- specific article -->
-              <h2>Article Title</h2>
-              <img src="images/australian-quokko-650_650x400_71488173163.jpg" alt="A Quokka reaching out their arms with a big smile">
-              <!-- Author information -->
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quibusdam, iure neque quisquam esse itaque natus fuga provident ad et! Esse, maxime ab deleniti nemo voluptates, incidunt assumenda nesciunt odio delectus, ipsum rem dolores ducimus laudantium quas magnam ad cupiditate tempore quis? Provident fuga nobis delectus nemo. Consectetur exercitationem sequi pariatur rerum soluta mollitia dolor nam officia cupiditate iusto animi qui a voluptate eligendi aut perspiciatis quam numquam perferendis repellendus dolore, ratione aliquam? Cumque minima blanditiis maiores, quia ea sunt quam consectetur sit illo iusto eligendi modi fugiat. Quisquam laborum culpa odit dignissimos dolor repudiandae facilis sapiente quasi debitis quas!
-              </p>
-              <p>final info about the article</p>
-      </article>
-    <footer>
-      <p>&copy; 2025 SAIT</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+      </div>
+    </section>
+    <article>
+      <h1>Article Collection</h1>
+      <!-- responsible for layout of articles -->
+      <!-- specific article -->
+      <h2>Article Title</h2>
+      <img src="images/australian-quokko-650_650x400_71488173163.jpg"
+        alt="A Quokka reaching out their arms with a big smile">
+      <!-- Author information -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quibusdam, iure neque quisquam esse itaque natus
+        fuga provident ad et! Esse, maxime ab deleniti nemo voluptates, incidunt assumenda nesciunt odio delectus, ipsum
+        rem dolores ducimus laudantium quas magnam ad cupiditate tempore quis? Provident fuga nobis delectus nemo.
+        Consectetur exercitationem sequi pariatur rerum soluta mollitia dolor nam officia cupiditate iusto animi qui a
+        voluptate eligendi aut perspiciatis quam numquam perferendis repellendus dolore, ratione aliquam? Cumque minima
+        blanditiis maiores, quia ea sunt quam consectetur sit illo iusto eligendi modi fugiat. Quisquam laborum culpa
+        odit dignissimos dolor repudiandae facilis sapiente quasi debitis quas!
+      </p>
+      <p>final info about the article</p>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2025 SAIT</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
